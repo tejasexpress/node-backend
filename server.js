@@ -9,10 +9,14 @@ const port = process.env.PORT || 3030;
 var choice = [ "Human",
 "AI"];
 
-app.use(cors({
-    origin: 'http://localhost:5173'
-  
-}));
+const corsOptions = {
+    origin: 'https://ml-frontend.onrender.com/', // Replace with the actual URL of the website
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true, // Enable credentials (cookies, authorization headers, etc.)
+    optionsSuccessStatus: 204,
+  };
+
+app.use(cors(corsOptions));
 // Parse incoming JSON requests
 app.use(bodyParser.json());
 
