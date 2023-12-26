@@ -10,7 +10,7 @@ var choice = [ "Human",
 "AI"];
 
 const corsOptions = {
-    origin: 'https://ml-frontend.onrender.com/', // Replace with the actual URL of the website
+    origin: 'https://ml-frontend.onrender.com', // Replace with the actual URL of the website
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true, // Enable credentials (cookies, authorization headers, etc.)
     optionsSuccessStatus: 204,
